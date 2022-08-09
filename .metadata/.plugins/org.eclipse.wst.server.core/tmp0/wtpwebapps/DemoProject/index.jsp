@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="add">
+	<h1>demo</h1>
+	Enter first number:<input type="text" name="num1"><br/>
+	Enter second number:<input type="text" name="num2"><br/>
+	<input type="submit">
+	
+</form>
+
+<form action="insert" method="post">
+
+	<h1>enter details</h1>
+	Enter repno<input type="text" name="repno"><br>
+	Enter repname<input type="text" name="repname">
+	<input type="submit">
+</form>
+</body>
+</html>

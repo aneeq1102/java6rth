@@ -1,0 +1,27 @@
+package represent;
+import javax.swing.*;
+public class Frame1 extends JFrame {
+	Frame1(){
+		JPanel contentPane = new JPanel();
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel cust_name_lbl = new JLabel("Enter customer name");
+		JTextField cust_name_txt= new JTextField();
+		cust_name_lbl.setBounds(10,10,100,15);
+		cust_name_txt.setBounds(120,10,100,15);
+		
+		JLabel cust_no_lbl = new JLabel("Enter customer no");
+		JTextField cust_no_txt = new JTextField();l
+		cust_no_lbl.setBounds(10,50,100,15);
+		cust_no_txt.setBounds(150,50,100,15);
+		
+		
+		contentPane.add(cust_no_txt);
+		contentPane.add(cust_no_lbl);
+		contentPane.add(cust_name_txt);
+		contentPane.add(cust_name_lbl);
+		
+		
+	}
+}

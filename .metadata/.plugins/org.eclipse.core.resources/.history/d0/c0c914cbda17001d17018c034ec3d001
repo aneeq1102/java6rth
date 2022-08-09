@@ -1,0 +1,14 @@
+package Telephone;
+
+public class MissedCall {
+	MissedCall(String number){
+		this.number = number;
+	}
+	String name = "anonymous";
+	String number;
+	
+	void display() {
+		System.out.println(name);
+		System.out.println(number);
+	}
+}

@@ -1,0 +1,63 @@
+import javax.swing.*;
+public class Frame1 extends JFrame{
+	Frame1(){
+		JPanel contentPane = new JPanel();
+		contentPane.setLayout(null);
+		setContentPane(contentPane);
+		setSize(600,600);
+		
+		//
+		
+		JLabel name_lbl = new JLabel("name");
+		name_lbl.setBounds(10,10,100,15);
+		
+		JTextField name_txt = new JTextField();
+		name_txt.setBounds(120, 10, 100, 15);
+		
+		
+		//
+		
+		JLabel usn_lbl = new JLabel("usn");
+		usn_lbl.setBounds(10,30,100,15);
+		
+		JTextField usn_txt = new JTextField();
+		usn_txt.setBounds(120, 30, 100, 15);
+		
+		//
+		
+		JLabel age_lbl = new JLabel("age");
+		age_lbl.setBounds(10,50,100,15);
+		
+		JTextField age_txt = new JTextField();
+		age_txt.setBounds(120, 50, 100, 15);
+		
+		//
+		
+		JLabel usn_lbl = new JLabel("usn");
+		usn_lbl.setBounds(10,70,100,15);
+		
+		JTextField usn_txt = new JTextField();
+		usn_txt.setBounds(120, 70, 100, 15);
+		
+		//
+		
+		JLabel sgpa1_lbl = new JLabel("sgpa1");
+		sgpa1_lbl.setBounds(10,90,100,15);
+		
+		JTextField sgpa1_txt = new JTextField();
+		sgpa1_txt.setBounds(120, 90, 100, 15);
+		
+		//
+		
+		JLabel sgpa2_lbl = new JLabel("sgpa2");
+		usn_lbl.setBounds(10,110,100,15);
+		
+		JTextField sgpa2_txt = new JTextField();
+		sgpa2_txt.setBounds(120, 110, 100, 15);
+		
+		
+		
+		contentPane.add(name_lbl);
+		contentPane.add(name_txt);
+	}
+}

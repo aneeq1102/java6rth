@@ -1,0 +1,14 @@
+package represent;
+import java.sql.*;
+public class Main {
+	public static void main(String args[]) throws Exception{
+		String url = "jdbc:mysql://localhost:3307/prog";
+		String uname="root";
+		String pass = "aneeq1102";
+		
+		
+		Class.forName("class.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection(url,uname,pass);
+		String query 
+	}
+}

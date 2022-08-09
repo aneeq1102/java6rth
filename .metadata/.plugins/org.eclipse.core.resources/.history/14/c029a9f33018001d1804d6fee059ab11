@@ -1,0 +1,42 @@
+package arjuncodes;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DemoServlet extends HttpServlet {
+	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException,Exception {
+		int i=Integer.parseInt(req.getParameter("num1"));
+		int j=Integer.parseInt(req.getParameter("num2"));
+		int k = i + j;
+		
+		PrintWriter out = res.getWriter();
+		out.println("result is"+k);
+		
+		Path filePath = Path.of("D:\\algos_temp\\text.txt");
+		String content = "bing chilling";
+		Files.writeString(filePath, content);
+		
+		String uname = "root";
+		String pass = "aneeq1102";
+		String url = "jdbc:mysql://localhost:3306/prog";
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		Connection con = DriverManager.getConnection(url,uname,pass);
+		PreparedStatement ps = con.prepareStatement("insert into table Representative values(?,?)");
+		ps.setInt(1, 5);
+		ps.setString(2, "kyle");
+		
+		int count = ps.executeUpdate();
+		
+	}
+}

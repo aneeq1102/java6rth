@@ -1,0 +1,16 @@
+import javax.swing.*;
+public class Frame1 extends JFrame{
+	Frame1(){
+		JPanel contentPane = new JPanel();
+		contentPane.setLayout(null);
+		setContentPane(contentPane);
+		
+		JLabel name_lbl = new JLabel("name");
+		name_lbl.setBounds(10,10,100,15);
+		
+		
+		
+		
+		contentPane.add(name_lbl);
+	}
+}
